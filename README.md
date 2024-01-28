@@ -1,5 +1,4 @@
 # Responsive Fruit Website
-## [Watch it on youtube](https://youtu.be/7n7ofxoCAxo)
 ### Responsive Fruit Website
 
 - Responsive Fruit Website Design Using HTML CSS & JavaScript
