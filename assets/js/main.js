@@ -92,3 +92,27 @@ sr.reveal('.home__img',{origin:'bottom'})
 sr.reveal('.enjoy__card, .popular__card',{interval: 100})
 sr.reveal('.about__data',{origin:'right'})
 sr.reveal('.about__img',{origin:'left'})
+
+
+
+// toggle pop out menu
+// Selecting Corner Menu Wrapper Element
+const cornerMenuWrapper = document.getElementById('corner-menu-wrapper')
+ 
+// Pop out / Hiding Menu Items when Corner Menu button is clicked
+cornerMenuWrapper.querySelector('#corner-menu-btn').addEventListener('click', e=>{
+    // prevent default
+    e.preventDefault()
+ 
+    if(cornerMenuWrapper.classList.contains('show')){
+        // Hide the Menu Items
+        cornerMenuWrapper.classList.remove('show')
+        // Update Menu Button Icon
+        cornerMenuWrapper.querySelector('#corner-menu-btn').innerHTML = `<span class="material-symbols-outlined">menu</span>`
+    }else{
+        // Show the Menu Items
+        cornerMenuWrapper.classList.add('show')
+        // Update Menu Button Icon
+        cornerMenuWrapper.querySelector('#corner-menu-btn').innerHTML = `<span class="material-symbols-outlined">close</span>`
+    }
+})
