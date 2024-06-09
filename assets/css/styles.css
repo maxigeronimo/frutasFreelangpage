@@ -22,11 +22,11 @@
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
   --second-font: "Cherry Bomb One", cursive;
-  --biggest-font-size: 3rem;
+  --biggest-font-size: 5rem;
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
+  --h2-font-size: 2.25rem;
+  --h3-font-size: 2rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
 
@@ -218,7 +218,7 @@ body.dark-theme {
 }
 
 .nav__logo img {
-  width: 1.25rem;
+  width: 3.25rem;
 }
 
 .nav__toggle,
@@ -253,6 +253,7 @@ body.dark-theme {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   transition: color .4s;
+  font-size: x-large;
 }
 
 .nav__link:hover {
@@ -633,7 +634,7 @@ body.dark-theme {
 }
 
 .footer__logo img {
-  width: 1.25rem;
+  width: 2.25rem;
 }
 
 .footer__data {
@@ -752,6 +753,7 @@ body.dark-theme {
 /* Show Scroll Up */
 .show-scroll {
   bottom: 3rem;
+  background-color: var(--first-color);
 }
 
 /* ================ social pop ================ */
@@ -792,7 +794,7 @@ button#corner-menu-btn {
 /* Corner Menu Button on hover */
 button#corner-menu-btn:hover{
   transform: scale(1.02);
-  background: #131212;
+  background: var(--first-color-alt);
   box-shadow: 1px 1px 10px #00000094;
 } 
 #corner-menu-wrapper.show #corner-menu-btn{
@@ -825,8 +827,8 @@ div#corner-menu-list {
 a.corner-menu-item {
   background: #fff;
   display: flex;
-  height: 38px;
-  width: 38px;
+  height: 20px;
+  width: 20px;
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -848,20 +850,26 @@ a.corner-menu-item:nth-child(3) {
 a.corner-menu-item:nth-child(4) {
   transform: translate(1px, 1px) scale(.5);
 }
+a.corner-menu-item:nth-child(5) {
+  transform: translate(1px, 1px) scale(.5);
+}
 #corner-menu-wrapper.show a.corner-menu-item{
   opacity: 1;
 }
 #corner-menu-wrapper.show a.corner-menu-item:nth-child(1) {
-  transform: translate(-25px, 12px)  scale(1);
+  transform: translate(-25px, 12px)  scale(2.2);
 }
 #corner-menu-wrapper.show a.corner-menu-item:nth-child(2) {
-  transform: translate(23px, -8px)  scale(1);
+  transform: translate(23px, -8px)  scale(2.2);
 }
 #corner-menu-wrapper.show a.corner-menu-item:nth-child(3) {
-  transform: translate(65px, -2px)  scale(1);
+  transform: translate(65px, -2px)  scale(2.2);
 }
 #corner-menu-wrapper.show a.corner-menu-item:nth-child(4) {
-  transform: translate(90px, 15px)  scale(1);
+  transform: translate(90px, 15px)  scale(2.2);
+}
+#corner-menu-wrapper.show a.corner-menu-item:nth-child(5) {
+  transform: translate(90px, 15px)  scale(2.2);
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -1012,8 +1020,8 @@ a.corner-menu-item:nth-child(4) {
 
   .home__fruit {
     width: 70px;
-    left: 11rem;
-    top: 6.5rem;
+    left: 16rem;
+    top: 10.5rem;
   }
 
   .home__title {
@@ -1099,7 +1107,7 @@ a.corner-menu-item:nth-child(4) {
   }
 
   .popular__img {
-    width: 180px;
+    width: 140px;
   }
 
   .popular__button {
