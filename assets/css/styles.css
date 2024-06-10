@@ -23,12 +23,12 @@
   --body-font: "Poppins", sans-serif;
   --second-font: "Cherry Bomb One", cursive;
   --biggest-font-size: 5rem;
-  --big-font-size: 2rem;
+  --big-font-size: 3rem;
   --h1-font-size: 1.5rem;
-  --h2-font-size: 2.25rem;
+  --h2-font-size: 1.85rem;
   --h3-font-size: 2rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
+  --normal-font-size: 1.238rem;
+  --small-font-size: 1.113rem;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -45,7 +45,7 @@
   :root {
     --biggest-font-size: 5.5rem;
     --big-font-size: 3rem;
-    --h1-font-size: 2.25rem;
+    --h1-font-size: 1.85rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
@@ -634,7 +634,7 @@ body.dark-theme {
 }
 
 .footer__logo img {
-  width: 2.25rem;
+  width: 1.85rem;
 }
 
 .footer__data {
@@ -752,7 +752,7 @@ body.dark-theme {
 
 /* Show Scroll Up */
 .show-scroll {
-  bottom: 3rem;
+  bottom: 5rem;
   background-color: var(--first-color);
 }
 
@@ -760,9 +760,9 @@ body.dark-theme {
 /* Corner Menu Wrapper */
 div#corner-menu-wrapper {
   position: fixed;
-  bottom: 25px;
+  bottom: 5rem;
   /* right: 25px; */
-  left: 25px;
+  left: 3rem;
   z-index: 1;
 }
 /* Corner Menu Inner */
@@ -776,25 +776,27 @@ div#corner-menu-wrapper {
 }
 /* Corner Menu Button */
 button#corner-menu-btn {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  background: #2c2b2b;
+  background: var(--title-color);
   outline: none;
-  color: #fff;
+  color: var(--container-color);
   border: none;
   border-radius: 50%;
   box-shadow: 1px 1px 10px #00000070;
   cursor: pointer;
   transition:all .2s ease;
   animation: spin2 .4s ease forwards;
+  scale: 1.8;
 }
 /* Corner Menu Button on hover */
 button#corner-menu-btn:hover{
-  transform: scale(1.02);
+  transform: scale(1.22);
   background: var(--first-color-alt);
+  color: var(--title-color);
   box-shadow: 1px 1px 10px #00000094;
 } 
 #corner-menu-wrapper.show #corner-menu-btn{
@@ -820,57 +822,63 @@ button#corner-menu-btn:hover{
 }
 div#corner-menu-list {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -10px;
+  right: -8px;
   z-index: 1;
 }
 a.corner-menu-item {
-  background: #fff;
+  background: var(--body-font);
   display: flex;
   height: 20px;
   width: 20px;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #000;
+  color:var(--title-color);
   border-radius: 50%;
   box-shadow: 1px 1px 10px #00000045;
   transition: all .4s ease-in-out;
   opacity: 0;
 }
 a.corner-menu-item:nth-child(1) {
-  transform: translate(1px, 127px) scale(.5);
+  transform: translate(-66px, 127px) scale(.5);
 }
 a.corner-menu-item:nth-child(2) {
-  transform: translate(1px, 85px) scale(.5);
+  transform: translate(-66px, 85px) scale(.5);
 }
 a.corner-menu-item:nth-child(3) {
-  transform: translate(1px, 43px) scale(.5);
+  transform: translate(-66px, 43px) scale(.5);
 }
 a.corner-menu-item:nth-child(4) {
-  transform: translate(1px, 1px) scale(.5);
+  transform: translate(-66px, 1px) scale(.5);
 }
 a.corner-menu-item:nth-child(5) {
-  transform: translate(1px, 1px) scale(.5);
+  transform: translate(-66px, 1px) scale(.5);
 }
 #corner-menu-wrapper.show a.corner-menu-item{
   opacity: 1;
 }
 #corner-menu-wrapper.show a.corner-menu-item:nth-child(1) {
-  transform: translate(-25px, 12px)  scale(2.2);
+  transform: translate(-26px, 31px) scale(1.8);
 }
 #corner-menu-wrapper.show a.corner-menu-item:nth-child(2) {
-  transform: translate(23px, -8px)  scale(2.2);
+  transform: translate(13px, 12px) scale(1.8);
 }
 #corner-menu-wrapper.show a.corner-menu-item:nth-child(3) {
-  transform: translate(65px, -2px)  scale(2.2);
+  transform: translate(35px, 26px) scale(1.8);
 }
 #corner-menu-wrapper.show a.corner-menu-item:nth-child(4) {
-  transform: translate(90px, 15px)  scale(2.2);
+  transform: translate(22px, 44px) scale(1.8);
 }
 #corner-menu-wrapper.show a.corner-menu-item:nth-child(5) {
-  transform: translate(90px, 15px)  scale(2.2);
+  transform: translate(-17px, 32px) scale(1.8);
 }
+a.corner-menu-item:hover{
+  transform: scale(2.22);
+  background: var(--first-color);
+  color: var(--container-color);
+  box-shadow: 1px 1px 10px #00000094;
+} 
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */

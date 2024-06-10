@@ -108,11 +108,11 @@ cornerMenuWrapper.querySelector('#corner-menu-btn').addEventListener('click', e=
         // Hide the Menu Items
         cornerMenuWrapper.classList.remove('show')
         // Update Menu Button Icon
-        cornerMenuWrapper.querySelector('#corner-menu-btn').innerHTML = `<span class="material-symbols-outlined">menu</span>`
+        cornerMenuWrapper.querySelector('#corner-menu-btn').innerHTML = `<span class="material-symbols-outlined"><i class="ri-emotion-happy-line"></i></span>`
     }else{
         // Show the Menu Items
         cornerMenuWrapper.classList.add('show')
         // Update Menu Button Icon
-        cornerMenuWrapper.querySelector('#corner-menu-btn').innerHTML = `<span class="material-symbols-outlined">close</span>`
+        cornerMenuWrapper.querySelector('#corner-menu-btn').innerHTML = `<span class="material-symbols-outlined"><i class="ri-close-line"></i></span>`
     }
 })
