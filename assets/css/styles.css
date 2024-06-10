@@ -333,7 +333,7 @@ body.dark-theme {
 
 .home__fruit {
   width: 40px;
-  top: 6.75rem;
+  top: 12.75rem;
   left: 0rem;
 }
 
@@ -779,7 +779,7 @@ button#corner-menu-btn {
   width: 20px;
   height: 20px;
   display: flex;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
   background: var(--title-color);
   outline: none;
@@ -964,7 +964,7 @@ a.corner-menu-item:hover{
   }
 
   .home__fruit {
-    left: 10rem;
+    left: 16rem;
   }
 
   .enjoy__container,
@@ -1139,6 +1139,9 @@ a.corner-menu-item:hover{
 
   .join__leaf-2 {
     right: 6rem;
+  }
+  button#corner-menu-btn{
+    align-items: stretch;
   }
 
   .footer {
