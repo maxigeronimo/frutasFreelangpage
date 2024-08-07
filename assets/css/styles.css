@@ -43,7 +43,7 @@
 /*========== Responsive typography ==========*/
 @media screen and (max-width: 1150px) {
   :root {
-    --biggest-font-size: 5.5rem;
+    --biggest-font-size: 4.5rem;
     --big-font-size: 3rem;
     --h1-font-size: 1.85rem;
     --h2-font-size: 1.5rem;
@@ -200,6 +200,7 @@ body.dark-theme {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 1rem;
 }
 
 .nav__logo,
@@ -235,10 +236,10 @@ body.dark-theme {
     left: 0;
     background-color: var(--body-color);
     width: 100%;
+    height: -webkit-fill-available;
     box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
-    padding-block: 4.5rem;
+    padding-block: 6.5rem;
     transition: top .4s;
-
   }
 }
 
@@ -262,8 +263,8 @@ body.dark-theme {
 
 .nav__close {
   position: absolute;
-  top: 1rem;
-  right: 1.5rem;
+  top: 2rem;
+  right: 1rem;
 }
 
 .nav__img-1,
@@ -273,9 +274,9 @@ body.dark-theme {
 }
 
 .nav__img-1 {
-  width: 150px;
-  top: -2.5rem;
-  left: -3.5rem;
+  width: 130px;
+  top: 0.5rem;
+  left: 0.5rem;
   rotate: 180deg;
 }
 
@@ -752,7 +753,7 @@ body.dark-theme {
 
 /* Show Scroll Up */
 .show-scroll {
-  bottom: 5rem;
+  bottom: 3rem;
   background-color: var(--first-color);
 }
 
@@ -760,9 +761,9 @@ body.dark-theme {
 /* Corner Menu Wrapper */
 div#corner-menu-wrapper {
   position: fixed;
-  bottom: 5rem;
+  bottom: 4rem;
   /* right: 25px; */
-  left: 3rem;
+  left: 2rem;
   z-index: 1;
 }
 /* Corner Menu Inner */
@@ -776,21 +777,21 @@ div#corner-menu-wrapper {
 }
 /* Corner Menu Button */
 button#corner-menu-btn {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: auto;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background: var(--title-color);
+  background: var(--first-color);
   outline: none;
   color: var(--container-color);
   border: none;
   border-radius: 50%;
   box-shadow: 1px 1px 10px #00000070;
   cursor: pointer;
-  transition:all .2s ease;
+  transition: all .2s ease;
   animation: spin2 .4s ease forwards;
-  scale: 1.8;
+  scale: 1.4;
+  align-content: center;
 }
 /* Corner Menu Button on hover */
 button#corner-menu-btn:hover{
@@ -822,23 +823,24 @@ button#corner-menu-btn:hover{
 }
 div#corner-menu-list {
   position: absolute;
-  bottom: -10px;
-  right: -8px;
+  bottom: -1rem;
+  right: -1rem;
   z-index: 1;
 }
 a.corner-menu-item {
-  background: var(--body-font);
+  background: var(--first-color);
   display: flex;
-  height: 20px;
-  width: 20px;
+  height: auto;
+  width: 24px;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color:var(--title-color);
+  color: var(--title-color);
   border-radius: 50%;
   box-shadow: 1px 1px 10px #00000045;
   transition: all .4s ease-in-out;
   opacity: 0;
+  align-content: center;
 }
 a.corner-menu-item:nth-child(1) {
   transform: translate(-66px, 127px) scale(.5);
@@ -859,19 +861,19 @@ a.corner-menu-item:nth-child(5) {
   opacity: 1;
 }
 #corner-menu-wrapper.show a.corner-menu-item:nth-child(1) {
-  transform: translate(-26px, 31px) scale(1.8);
+  transform: translate(-26px, 31px) scale(1.4);
 }
 #corner-menu-wrapper.show a.corner-menu-item:nth-child(2) {
-  transform: translate(13px, 12px) scale(1.8);
+  transform: translate(13px, 12px) scale(1.4);
 }
 #corner-menu-wrapper.show a.corner-menu-item:nth-child(3) {
-  transform: translate(35px, 26px) scale(1.8);
+  transform: translate(35px, 26px) scale(1.4);
 }
 #corner-menu-wrapper.show a.corner-menu-item:nth-child(4) {
-  transform: translate(22px, 44px) scale(1.8);
+  transform: translate(22px, 44px) scale(1.4);
 }
 #corner-menu-wrapper.show a.corner-menu-item:nth-child(5) {
-  transform: translate(-17px, 32px) scale(1.8);
+  transform: translate(-17px, 32px) scale(1.4);
 }
 a.corner-menu-item:hover{
   transform: scale(2.22);
