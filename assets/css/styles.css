@@ -200,7 +200,7 @@ body.dark-theme {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .nav__logo,
@@ -753,7 +753,7 @@ body.dark-theme {
 
 /* Show Scroll Up */
 .show-scroll {
-  bottom: 3rem;
+  bottom: 3.7rem;
   background-color: var(--first-color);
 }
 
@@ -1144,6 +1144,25 @@ a.corner-menu-item:hover{
   }
   button#corner-menu-btn{
     align-items: stretch;
+    width: 30px;
+  }
+  a.corner-menu-item {
+    width: 30px;
+  }
+  #corner-menu-wrapper.show a.corner-menu-item:nth-child(1) {
+    transform: translate(-34px, 56px) scale(1.4);
+  }
+  #corner-menu-wrapper.show a.corner-menu-item:nth-child(2) {
+    transform: translate(15px, 29px) scale(1.4);
+  }
+  #corner-menu-wrapper.show a.corner-menu-item:nth-child(3) {
+    transform: translate(36px, 39px) scale(1.4);
+  }
+  #corner-menu-wrapper.show a.corner-menu-item:nth-child(4) {
+    transform: translate(15px, 54px) scale(1.4);
+  }
+  #corner-menu-wrapper.show a.corner-menu-item:nth-child(5) {
+    transform: translate(-34px, 29px) scale(1.4);
   }
 
   .footer {

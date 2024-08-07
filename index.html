@@ -16,12 +16,16 @@
 
    <title>Responsive fruit website</title>
    <style>
-     body {
-       -webkit-user-select: none; /* Chrome, Safari, Opera */
-       -moz-user-select: none; /* Firefox */
-       -ms-user-select: none; /* IE 10+ */
-       user-select: none; /* Standard syntax */
-     }
+      body {
+         -webkit-user-select: none;
+         /* Chrome, Safari, Opera */
+         -moz-user-select: none;
+         /* Firefox */
+         -ms-user-select: none;
+         /* IE 10+ */
+         user-select: none;
+         /* Standard syntax */
+      }
    </style>
 </head>
 
@@ -77,7 +81,8 @@
                   Frutas Frescas
                </h1>
                <p class="home__description">
-                  Disfruta de las mejores frutas orgánicas cosechadas con la mejor calidad posible, obteniendo sabores únicos y deliciosos.
+                  Disfruta de las mejores frutas orgánicas cosechadas con la mejor calidad posible, obteniendo sabores
+                  únicos y deliciosos.
                </p>
                <a href="#" class="button">¡Ordena Fruta Ahora!</a>
                <img src="assets/img/fruit-line-2.png" alt="image" class="home__fruit">
@@ -122,10 +127,11 @@
             <div class="about__data">
                <h2 class="section__title">
                   Proporcionamos<br>
-                  Frutas Saludables 
+                  Frutas Saludables
                </h2>
                <p class="about__description">
-                  Las frutas nos llegan desde las mejores cosechas, plantadas con el cuidado necesario para obtener la mejor calidad de fruta, disfrutando de sus sabores y cuidando tu salud.
+                  Las frutas nos llegan desde las mejores cosechas, plantadas con el cuidado necesario para obtener la
+                  mejor calidad de fruta, disfrutando de sus sabores y cuidando tu salud.
                </p>
                <a href="#" class="button">
                   Conocer Más
@@ -236,23 +242,26 @@
       <!--====================  WRAPPER ====================-->
       <div id="corner-menu-wrapper" class="">
          <div class="corner-menu-inner">
-             <div class="corner-menu-btn-holder">
-                 <button id="corner-menu-btn"><span class="material-symbols-outlined"><i class="ri-emotion-happy-line"></i></span></button>
-             </div>
-             <div id="corner-menu-list">
-               <a href="tel:+54912345678" class="corner-menu-item" title="Phone"><span class="material-symbols-outlined"><i
-                        class="ri-phone-line"></i></span></a>
-                <a href="mailto:example@example.com?subject=Consulta%20/%20Presupuesto&body=Hola,%20estoy%20interesado/a%20en%20obtener%20más%20información%20sobre%20[vuestro%20producto/servicio].%20Podrían%20proporcionarme%20un%20presupuesto%20detallado%20y%20tiempos%20de%20entrega%20estimados?" class="corner-menu-item" title="Mail"><span class="material-symbols-outlined"><i
+            <div class="corner-menu-btn-holder">
+               <button id="corner-menu-btn"><span class="material-symbols-outlined"><i
+                        class="ri-emotion-happy-line"></i></span></button>
+            </div>
+            <div id="corner-menu-list">
+               <a href="tel:+54912345678" class="corner-menu-item" title="Phone"><span
+                     class="material-symbols-outlined"><i class="ri-phone-line"></i></span></a>
+               <a href="mailto:example@example.com?subject=Consulta%20/%20Presupuesto&body=Hola,%20estoy%20interesado/a%20en%20obtener%20más%20información%20sobre%20[vuestro%20producto/servicio].%20Podrían%20proporcionarme%20un%20presupuesto%20detallado%20y%20tiempos%20de%20entrega%20estimados?"
+                  class="corner-menu-item" title="Mail"><span class="material-symbols-outlined"><i
                         class="ri-mail-line"></i></span></a>
-               <a href="https://wa.me/11234567?text=Hola,%20gracias%20por%20contactarnos.%20¿En%20qué%20podemos%20ayudarte%20hoy?" class="corner-menu-item" title="WhatsApp"><span class="material-symbols-outlined"><i
+               <a href="https://wa.me/11234567?text=Hola,%20gracias%20por%20contactarnos.%20¿En%20qué%20podemos%20ayudarte%20hoy?"
+                  class="corner-menu-item" title="WhatsApp"><span class="material-symbols-outlined"><i
                         class="ri-whatsapp-line"></i></span></a>
-               <a href="https://www.instagram.com/username" class="corner-menu-item" title="Instragram"><span class="material-symbols-outlined"><i
-                        class="ri-instagram-line"></i></span></a>
-               <a href="https://www.google.com/maps/place/?q=Your+Location" class="corner-menu-item" title="Map"><span class="material-symbols-outlined"><i
-                        class="ri-map-pin-line"></i></span></a>
-             </div>
+               <a href="https://www.instagram.com/username" class="corner-menu-item" title="Instragram"><span
+                     class="material-symbols-outlined"><i class="ri-instagram-line"></i></span></a>
+               <a href="https://www.google.com/maps/place/?q=Your+Location" class="corner-menu-item" title="Map"><span
+                     class="material-symbols-outlined"><i class="ri-map-pin-line"></i></span></a>
+            </div>
          </div>
-     </div>
+      </div>
    </main>
 
    <!--==================== FOOTER ====================-->
@@ -263,7 +272,7 @@
                <img src="assets/img/logo.png" alt="logo-fruta">Fruta
             </a>
             <p class="footer__description">
-               Come sano, elige  <br>
+               Come sano, elige <br>
                las mejores frutas.
             </p>
          </div>
@@ -350,20 +359,34 @@
 
    <!--=============== TEXTO JS ===============-->
    <script type="text/javascript">
-     /*<![CDATA[*/
-     document.oncontextmenu = function(event) {
-       if (event.target.tagName != 'INPUT' && event.target.tagName != 'TEXTAREA') {
-         event.preventDefault();
+      /*<![CDATA[*/
+      // Cambia estas variables por las tuyas
+       const dueDate = new Date('2024-08-07');
+       const deadline = 60;
+
+       const daysPassed = Math.floor((new Date() - dueDate) / (1000 * 60 * 60 * 24));
+
+       if (daysPassed > 0) {
+         const daysLate = daysPassed;
+         let opacity = daysLate / deadline;
+         opacity = Math.min(opacity, 1);
+         opacity = Math.max(opacity, 0);
+         document.body.style.opacity = opacity;
        }
-     };
-     document.ondragstart = function() {
-       if (event.target.tagName != 'INPUT' && event.target.tagName != 'TEXTAREA') {
-         event.preventDefault();
-       }
-     };
-     document.onselectstart = function() {
-       return false;
-     };
+      //SELECCION Y TEXTO
+      document.oncontextmenu = function (event) {
+         if (event.target.tagName != 'INPUT' && event.target.tagName != 'TEXTAREA') {
+            event.preventDefault();
+         }
+      };
+      document.ondragstart = function () {
+         if (event.target.tagName != 'INPUT' && event.target.tagName != 'TEXTAREA') {
+            event.preventDefault();
+         }
+      };
+      document.onselectstart = function () {
+         return false;
+      };
      /*]]>*/
    </script>
 </body>
